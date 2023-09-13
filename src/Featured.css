@@ -1,0 +1,45 @@
+.movies-grid{
+    padding: 2rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.5rem;
+    justify-items: center;
+  }
+.featured-box{
+    padding: 2rem 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.featured-text{
+    color: #000;
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.featured-text-small{
+    color: var(--rose-700, #BE123C);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+}
+.movie-title{
+    color: var(--gray-900, #111827);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.movie-release-date{
+    color: var(--gray-400, #9CA3AF);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
-}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+html {
+  font-size: 62.5%; }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  box-sizing: border-box; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* header */
+
+.header {
+  height: 80vh;
+  background-image:url(./images/background-img.png);
+  background-size: cover;
+  background-position: top;
+  position: relative; 
+  
+  padding: 2rem 7rem;
+}
+.header-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Search */
+.search-container{
+  padding-top: 1rem;
+}
+.search-input {
+  width: 52rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 2px solid var(--gray-300, #D1D5DB);
+  outline: none;
+  background: transparent;
+  color: #fff; 
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff; /* Icon color */
+  font-size: 18px;
+}
+.search-input::placeholder {
+  color: var(--gray-300, #D1D5DB);
+  font-family: DM Sans;
+  font-size: 1.6rem;
+}
+
+/* Sign in text */
+.sign-in-box{
+  display: flex;
+  flex-direction: row;
+}
+.sign-in-text{
+  padding-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: DM Sans;
+  font-style: normal;
+}
+.round-pink-box {
+  margin-left: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--rose-700, #BE123C);
+  border-radius: 50%; 
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.menu-icon {
+  font-size: 1.4rem; /* Adjust the size as needed */
+  color: white; /* Icon color */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Movie Description */
+.description-text{
+  color: #fff;
 }
+.description-text h1{
+  padding-top: 5rem;
+  font-size: 4rem;
+}
+.description-text p{
+  font-size: 1.4rem;
+  font-family: DM Sans;
+}
+.text-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.number-block{
+  color: #fff;
+  padding-top: 8rem;
+  font-size: 1rem;
+}
+.imdb-img{
+  padding-right: 2rem;
+}
+.btn{
+    background: var(--rose-700, #BE123C);
+    color: white;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 2rem;;
+    color: var(--white, #FFF);
+    font-family: DM Sans;
+    font-size: 14px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.play-img{
+  padding-right: 1rem;
+}
+
