@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  box-sizing: border-box; }
+
+
+.movie-page{
+    text-align: center;
+    padding-top: 5rem;
+}
+.movie-name{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.search-input-new{
+    width: 52rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 2px solid var(--gray-300, #D1D5DB);
+    outline: none;
+    background: transparent;
+    color: black; 
+}
+.search-input::placeholder {
+    font-family: DM Sans;
+    font-size: 1.6rem;
+  }
+.button{
+    background: var(--rose-700, #BE123C);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--white, #FFF);
+    font-family: DM Sans;
+    margin-left: 1rem;
+    font-size: 14px;  
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+   */
+}

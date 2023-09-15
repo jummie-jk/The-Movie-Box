@@ -5,8 +5,10 @@ import play from "../images/Play.png"
 import "../App.css";
 import "../Featured.css"
 import FeaturedMovies from "./Featured";
+import { Link } from "react-router-dom";
+import Footer from "./footer"
 
-// import Searchmovies from "./Search";
+
 
 function Hero() {
   return (
@@ -17,12 +19,15 @@ function Hero() {
             <img src={logo} className="header-logo" alt="logo" />
           </div>
           <div className="search-container">
+          <Link to="/Search">
             <input
               type="text"
               className="search-input"
               placeholder="What do you want to watch?"
             ></input>
+             </Link>
           </div>
+         
           <div className="sign-in-text sign-in-box">
             <p>Sign in</p>
             <div className="round-pink-box">
@@ -53,6 +58,7 @@ function Hero() {
         </div>
       </header>
       <FeaturedMovies />
+      <Footer/>
     </div>
   );
 }

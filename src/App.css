@@ -35,6 +35,7 @@ body {
 /* Search */
 .search-container{
   padding-top: 1rem;
+  cursor: pointer;
 }
 .search-input {
   width: 52rem;
