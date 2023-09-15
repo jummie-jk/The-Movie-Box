@@ -1,3 +1,20 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  box-sizing: border-box; }
+
 .movies-grid{
     padding: 2rem 7rem;
     display: grid;
@@ -14,7 +31,7 @@
 .featured-text{
     color: #000;
     font-family: DM Sans;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -22,7 +39,7 @@
 .featured-text-small{
     color: var(--rose-700, #BE123C);
     font-family: DM Sans;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
@@ -34,6 +51,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-decoration: none;
+}
+.movie-title:link{
+    text-decoration: none;
 }
 .movie-release-date{
     color: var(--gray-400, #9CA3AF);
@@ -42,6 +63,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    text-decoration: none;
 }
 /* Footer */
 .footer{
@@ -77,3 +99,66 @@
     font-weight: 700;
     line-height: normal;
 }
+/* Mediaqueries */
+@media (max-width: 1000.98px) { 
+    .movies-grid{
+        padding: 2rem 7rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2.5rem;
+        justify-items: center;
+      }
+  }
+  @media (max-width: 991.98px) { 
+    .footer-text-block{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+  }
+  @media (max-width: 767.98px) { 
+    .movies-grid{
+        padding: 2rem 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2.5rem;
+        justify-items: center;
+      }
+      .footer{
+        text-align: center;
+        margin: 2rem 5rem;
+    }
+    .logo-img{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+  }
+  @media (max-width: 575.98px) { 
+    .movies-grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .featured-box{
+        padding: 2rem 6rem;
+        display: flex;
+        flex-direction: column;
+    }
+      .featured-text{
+            font-size: 2rem;
+            padding-left: 1rem;
+        }
+        .footer{
+            text-align: center;
+            margin: 2rem 4rem;
+        }
+        .logo-img{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .copy-right-text{
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            font-size: 18px;
+            font-weight: 400;
+        }
+   }

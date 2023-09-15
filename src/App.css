@@ -23,7 +23,6 @@ body {
   background-size: cover;
   background-position: top;
   position: relative; 
-  
   padding: 2rem 7rem;
 }
 .header-flex{
@@ -39,7 +38,7 @@ body {
 }
 .search-input {
   width: 52rem;
-  padding: 6px 10px;
+  padding: 0.6rem 1rem;
   border-radius: 6px;
   border: 2px solid var(--gray-300, #D1D5DB);
   outline: none;
@@ -49,9 +48,9 @@ body {
 .search-icon {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 1rem;
   transform: translateY(-50%);
-  color: #fff; /* Icon color */
+  color: #fff; 
   font-size: 18px;
 }
 .search-input::placeholder {
@@ -85,8 +84,8 @@ body {
 }
 
 .menu-icon {
-  font-size: 1.4rem; /* Adjust the size as needed */
-  color: white; /* Icon color */
+  font-size: 1.4rem; 
+  color: white;
 }
 
 /* Movie Description */
@@ -117,14 +116,14 @@ body {
 .btn{
     background: var(--rose-700, #BE123C);
     color: white;
-    padding: 6px 16px;
+    padding: 0.6rem 1.6rem;
     border: none;
-    border-radius: 6px;
+    border-radius: 0.6rem;
     cursor: pointer;
     margin-top: 2rem;;
     color: var(--white, #FFF);
     font-family: DM Sans;
-    font-size: 14px;  
+    font-size: 1.4rem;  
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,3 +133,98 @@ body {
   padding-right: 1rem;
 }
 
+/* Media Queries */
+@media (max-width: 1000.98px) { 
+  html {
+    font-size: 60%; }
+  .search-input {
+      width: 42rem;
+    }
+}
+@media (max-width: 991.98px) { 
+  html {
+    font-size: 50%; }
+  .search-input {
+      width: 35rem;
+    }
+    .description-text h1{
+      padding-top: 4rem;
+      font-size: 3rem;
+    }
+    .description-text p{
+      font-size: 1.3rem;
+    }
+
+}
+@media (max-width: 767.98px) { 
+  html {
+    font-size: 40%; }
+  .search-input {
+      width: 25rem;
+    }
+    .header {
+      padding: 2rem 5rem;
+    }
+    .description-text h1{
+      padding-top: 3rem;
+      font-size: 4rem;
+    }
+    .description-text p{
+      font-size: 2rem;
+    }
+    .text-block{
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+    }
+    .hide{
+      display: none;
+  }
+}
+@media (max-width: 667.98px) { 
+  .description-text h1{
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+  .search-input {
+    width: 20rem;
+  }
+  .header {
+    padding: 2rem 3.5rem;
+  }
+  .description-text p{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 575.98px) { 
+  html {
+    font-size: 35%; }
+  .search-input {
+      width: 25rem;
+    }
+    .header{
+      height: 60vh;
+    }
+    .header-flex{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .description-text h1{
+      padding-top: 3rem;
+      font-size: 2.5rem;
+    }
+    .description-text p{
+      font-size: 1.5rem;
+    }
+    .text-block{
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+    }
+    .hide{
+      display: none;
+  }
+ }

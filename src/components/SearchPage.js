@@ -8,9 +8,6 @@ function SearchPage(){
             <div className="movie-search">
              <Searchmovies/>
             </div>
-          
-           
-      
         </div>
     )
 }

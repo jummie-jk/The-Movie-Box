@@ -14,8 +14,6 @@ function MovieCard(props){
         <div className="info">
           <p className="movie-title" data-testid='movie-title'> {props.original_title}</p>
           <p data-testid='movie-release-date'><small>Release Date: {props.release_date}</small></p>
-          {/* <p className="vote">Rating: {props.vote_average}</p>
-          <p className="movie-details">{props.overview}</p> */}
         </div>
       </div>
     </Link>

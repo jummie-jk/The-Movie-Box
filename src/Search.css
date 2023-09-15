@@ -48,8 +48,16 @@ body {
     font-family: DM Sans;
     margin-left: 1rem;
     font-size: 14px;  
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-   */
 }
+@media (max-width: 767.98px) { 
+    .search-input-new{
+        width: 42rem;
+        padding: 5px 6px;
+    }
+  }
+  @media (max-width: 575.98px) { 
+    .search-input-new{
+        width: 18rem;
+        padding: 4px 6px;
+    }
+   }

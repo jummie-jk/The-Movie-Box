@@ -29,8 +29,8 @@ function Hero() {
           </div>
          
           <div className="sign-in-text sign-in-box">
-            <p>Sign in</p>
-            <div className="round-pink-box">
+            <p className="hide">Sign in</p>
+            <div className="round-pink-box hide">
               <div className="menu-icon">&#9776;</div>
             </div>
           </div>
@@ -48,7 +48,7 @@ function Hero() {
             </p>
             <button className="btn"><img src={play} alt="play icon button" className="play-img"></img>Watch Trailer</button>
             </div>
-            <div className="number-block">
+            <div className="number-block hide">
                 <p>1</p>
                 <p>2</p>
                 <p>3</p>
